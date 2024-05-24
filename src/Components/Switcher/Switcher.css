@@ -1,0 +1,42 @@
+
+.switch__container {
+    text-align: center;
+    }
+    .toggle-switch {
+    position: relative;
+    width: 64px;
+    }
+    .checkbox {
+    display: none;
+    }
+    .label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--contrast);
+    }
+    .inner:before {
+    line-height: 36px;
+    color: #fff;
+    content: "";
+    padding-left: 10px;
+    }
+    
+    .switch {
+    display: block;
+    width: 24px;
+    margin: 5px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 47%;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+    }
+    .checkbox:checked + .label .switch {
+    right: 0%;
+    }
+    

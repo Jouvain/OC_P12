@@ -1,0 +1,13 @@
+.carrousel {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 1rem;
+    margin: 2rem;
+    width: 100%;
+    justify-content: space-around;
+}
+.carrousel__icon {
+    height: 64px;
+    width: 64px;
+}

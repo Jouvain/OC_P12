@@ -1,0 +1,58 @@
+.container {
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+.mainBubble {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 53% 47% 28% 72% / 37% 61% 39% 63% ;
+    width: 300px;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.outline {
+    width: 300px;
+    height: 180px;
+    background-color: var(--light-color);
+    border-radius: 57% 43% 33% 67% / 52% 30% 70% 48%  ;
+}
+.round {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: cover;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.round img {
+    margin: 0.5rem;
+    width: 32px;
+    height: 32px;
+}
+.A {
+    position: absolute;
+    top: -20%;
+    left: 120%;
+}
+.B {
+    position: absolute;
+    top: 50%;
+    left: -30%;
+}
+.C {
+    position: absolute;
+    top: 60%;
+    left: 110%;
+}
+.D {
+    position: absolute;
+    top: 0%;
+    left: -45%;
+}
