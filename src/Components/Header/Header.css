@@ -1,4 +1,8 @@
+.header {
+    padding: 1rem 0 0 1rem ;
+}
+
 .menu {
-    height: 64px;
-    width: 64px;
+    height: 48px;
+    width: 48px;
 }

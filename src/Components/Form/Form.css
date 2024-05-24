@@ -25,6 +25,9 @@
     padding: 0.5rem;
     border: none;
 }
+.form__mail::placeholder, .form__name::placeholder, .form__text::placeholder {
+    color: white;
+}
 .form__button {
     background-color: var(--contrast);
     border: none;

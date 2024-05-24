@@ -7,6 +7,7 @@ import Carrousel from "../Components/Carrousel/Carrousel"
 import Skills from "../Components/Skills/Skills"
 import Form from "../Components/Form/Form"
 import wave from "../assets/wave.svg"
+import cv from "../utils/CV.pdf"
 
 
 /** import assets **/ 
@@ -58,7 +59,10 @@ export default function Homepage() {
                 <div className="titleSplash" >
                     <h2 > Projets </h2>
                 </div>
-                <Gallery />
+                <div className="homepage__gallery">
+                    <Gallery />
+                </div>
+               
                 <Carrousel />
             </section>
 
@@ -78,10 +82,10 @@ export default function Homepage() {
             </section>
             
             <section id="contact">
-                <p> Envie d'en savoir plus sur mon parcours ? </p>
-                <Button label="téléchargez mon CV" />
+                <p> Envie d'en savoir plus sur <strong> mon parcours ? </strong>  </p>
+                <a href="./src/utils/CV.pdf" download="CV"> <Button label="téléchargez mon CV" /> </a>
                 <div className="form__container">
-                    <p> Envie de collaborer ? </p>
+                    <p> Envie de <strong> collaborer ? </strong>  </p>
                     <Form />
                 </div>
 

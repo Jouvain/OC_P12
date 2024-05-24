@@ -13,11 +13,11 @@ export default function Header() {
     }
 
     return(
-        <div>
+        <header className="header">
         <Modal openModal={modal} closeModal={()=>setModal(false)} >
             <Navbar />
         </Modal>
         <img src={menu} alt="trois barres horizontales" onClick={opening} className="menu"/>
-        </div>
+        </header>
     )
 }

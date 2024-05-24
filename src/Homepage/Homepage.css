@@ -99,9 +99,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     padding: 2rem 0;
     position: relative;
+}
+.homepage__gallery {
+    width: 100%;
 }
 #skills {
     background-color: var(--main-color);
