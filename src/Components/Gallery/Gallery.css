@@ -5,3 +5,20 @@
     padding: 2rem;
     justify-items:stretch
 }
+.pagination button {
+    background-color: white;
+    color: var(--contrast);
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    margin: 5px;
+}
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
