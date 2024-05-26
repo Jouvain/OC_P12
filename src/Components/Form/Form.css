@@ -37,4 +37,13 @@
     font-weight: bold;
     width: 100px;
     margin: 1rem auto 2rem auto;
+    cursor: pointer;
+}
+.form__popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    padding: 1rem;
 }

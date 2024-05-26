@@ -1,26 +1,50 @@
 /* imports */
+import { useRef } from "react"
 import { useState } from "react"
+import emailjs from "@emailjs/browser"
+import Modal from "../Modal/Modal"
 import "./Form.css"
 
 export default function Form() {
+    const form = useRef()
     const [mail, setMail] = useState("")
     const [name, setName] = useState("")
     const [text, setText] = useState("")
+    const [sending, setSending] = useState(false)
+    const [modal, setModal] = useState(false)
+
+    let messageBoard = <p className="form__popup"> Merci pour votre message </p>
 
     function handleSubmit(event){
         event.preventDefault()
-        console.log("test du formulaire OK")
+        setSending(true)
+        
+        emailjs
+            .sendForm("service_a4i6r7i","template_il831kr", form.current, {publicKey: "e-8Rx-vFfdBYi5oBn"})
+            .then(
+                ()=> {
+                    console.log("success !"); 
+                    setSending(false) ; 
+                    setMail("") ; 
+                    setName("") ; 
+                    setText("") ;
+                    setModal(true)
+                }, 
+                (error) => {console.log("failed..."), error.text}
+            )    
     }
 
     return(
-        <form method="post" onSubmit={handleSubmit} className="form">
-            <input className="form__mail" id="mail" type="mail" value={mail} onChange={(event)=> setMail(event.target.value)} required placeholder="Votre adresse mail"/>
-            <input className="form__name" id="name" type="text" value={name} onChange={(event)=> setName(event.target.value)} required placeholder="Votre nom complet"/>
-         
-            <textarea className="form__text" name="text" rows={6} cols={80} placeholder="Votre message"/>
+        <form ref={form} onSubmit={handleSubmit} className="form">
+            <input name="from_name" className="form__name" id="from_name" type="text" value={name} onChange={(event)=> setName(event.target.value)} required placeholder="Votre nom complet"/>
+            <input name="from_mail" className="form__mail" id="from_mail" type="mail" value={mail} onChange={(event)=> setMail(event.target.value)} required placeholder="Comment vous contacter (tél, mail...)"/>
+            <textarea className="form__text" name="message" rows={6} cols={80} placeholder="Votre message" value={text} onChange={(event)=> setText(event.target.value)}/>
             <div>
-                <button className="form__button" type="submit"> Envoyer </button>
+                <button className="form__button" type="submit" disabled={sending}> {sending ? "En cours" : "Envoyer"} </button>
             </div>
+            <Modal openModal={modal} closeModal={()=> setModal(false)}>
+                {messageBoard}
+            </Modal>
             
         </form>
     )

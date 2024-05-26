@@ -8,6 +8,9 @@ import Skills from "../Components/Skills/Skills"
 import Form from "../Components/Form/Form"
 import wave from "../assets/wave.svg"
 import cv from "../utils/CV.pdf"
+import { setTheme } from "../utils/theme"
+import { keepTheme } from "../utils/theme"
+import { useEffect } from "react"
 
 
 /** import assets **/ 
@@ -17,7 +20,14 @@ import splash from "../assets/straitSplash.svg"
 /* import styles */
 import "./Homepage.css"
 
+
+
 export default function Homepage() {
+
+    useEffect(() => {
+        keepTheme()
+    }),[]
+
     return(
         <main>
             <section className="rows landing">
