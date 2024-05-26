@@ -39,3 +39,56 @@
     width: 36px;
     cursor: pointer;
 }
+.focus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    padding: 1rem;
+}
+.focus__title {
+    font-size: 3rem;
+    color: var(--contrast);
+    margin: 0;
+}
+.focus__desc {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.focus__tagsContainer {
+    display: flex;
+    flex-direction: row;
+    .focus__tag {
+        background-color: var(--dark-color);
+        border-radius: 1.5rem;
+        padding: 10px;
+        margin: 5px;
+        color: white;
+        font-weight: bold;
+    }
+}
+.focus__wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+.focus__colorBand {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: var(--dark-color);
+}
+.focus__picture {
+    width: 80%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: solid 5px var(--dark-color);
+}
+.focus__abstract {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 1rem;
+}

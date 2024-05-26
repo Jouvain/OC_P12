@@ -4,48 +4,69 @@
         "name": "Ohmyfood",
         "picture": "http://localhost:5173/src/assets/screenshot.png",
         "linkGitHub":"https://github.com/Jouvain/OC_P4",
-        "linkDemo":"#"
+        "linkDemo":"#",
+        "description":"Un mockup de site de réservation de restaurant",
+        "tags":["UI/UX", "HTML/CSS/JS"],
+        "abstract":"Un projet scolaire qui mettait l'accent sur les animations."
     },
     {
         "id":2,
         "name": "Bookie",
         "picture": "http://localhost:5173/src/assets/screenshot.png",
         "linkGitHub":"#",
-        "linkDemo":"#"
+        "linkDemo":"#",
+        "description":"Un mockup de site de réservation de solution d'hébergement",
+        "tags":["UI/UX", "HTML/CSS/JS"],
+        "abstract":"Un projet scolaire forçant à implémenter une maquette complexe en responsive - et mobile-first en l'occurence."
     },
     {
         "id":3,
         "name": "724Event",
         "picture": "http://localhost:5173/src/assets/screenshot.png",
         "linkGitHub":"https://github.com/Jouvain/Learning-debugging",
-        "linkDemo":"#"
+        "linkDemo":"#",
+        "description":"Vitrine d'une entreprise fictive dans l'évènementiel",
+        "tags":["Debugging", "React"],
+        "abstract":"Imaginez qu'un développeur fou choisisse d'utiliser des structures de données hors de proportion, des variables découpées et inutilement éparpillées dans divers composants et fasse des erreurs de typo et de logique au milieu. Voilà ce qu'il fallait débugger."
     },
     {
         "id":4,
         "name": "Kasa",
         "picture": "http://localhost:5173/src/assets/screenshot.png",
         "linkGitHub":"#",
-        "linkDemo":"#"
+        "linkDemo":"#",
+        "description":"Un mockup de site de réservation de solution d'hébergement",
+        "tags":["UI/UX", "HTML/CSS/JS", "React"],
+        "abstract":"Implémentation d'une maquette avec quelques animations et interactions avec un routage contraint en React."
     },
     {
         "id":5,
         "name": "Nina Carducci",
         "picture": "http://localhost:5173/src/assets/screenshot.png",
         "linkGitHub":"https://github.com/Jouvain/ninacarducci_optimisation",
-        "linkDemo":"#"
+        "linkDemo":"#",
+        "description":"Portefolio d'une photographe indépendante en freelance - fictive !",
+        "tags":["UI/UX", "HTML/CSS/JS", "Optimisation"],
+        "abstract":"Une mission d'optimisation technique (et de mise en place du référencement) pour un site initialement dans le rouge. Ressources trop lourdes, code non optimisé, balisage non sémantique, accessibilité en berne étaient autant de points à rectifier."
     },
     {
         "id":6,
         "name": "ArgentBank",
         "picture": "http://localhost:5173/src/assets/screenshot.png",
         "linkGitHub":"https://github.com/Jouvain/ArgentBank-website",
-        "linkDemo":"#"
+        "linkDemo":"#",
+        "description":"Tableau de bord bancaire pour particuliers",
+        "tags":["React", "Redux"],
+        "abstract":"Implémentation d'une interface sécurisée avec contrainte en React - et en appliquant une logique Redux pour gérer l'état de l'application."
     },
     {
         "id":7,
         "name": "Sophie Buel",
         "picture": "http://localhost:5173/src/assets/screenshot.png",
         "linkGitHub":"https://github.com/Jouvain/OC_P6",
-        "linkDemo":"#"
+        "linkDemo":"#",
+        "description":"Site vitrine d'une architecte d'intérieur",
+        "tags":["UI/UX", "HTML/CSS/JS"],
+        "abstract":"Gestion en javascript chimiquement pur d'un site vitrine avec authentification et galerie interactive."
     }
 ]

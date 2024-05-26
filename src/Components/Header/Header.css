@@ -5,4 +5,5 @@
 .menu {
     height: 48px;
     width: 48px;
+    cursor: pointer;
 }

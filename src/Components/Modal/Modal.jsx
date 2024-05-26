@@ -2,7 +2,8 @@
 import { useState, useRef, useEffect } from "react"
 
 /* imports assets */
-import cross from "../../assets/cross.svg"
+import cross from "../../assets/xmark-solid.svg"
+import "./Modal.css"
 
 export default function Modal({openModal, closeModal, children}) {
     const ref= useRef()

@@ -25,7 +25,7 @@ export default function Gallery() {
             {
                 filteredProjects.map((project)=> {
                     return(
-                        <Card key={project.id} picture={project.picture} name={project.name} linkGitHub={project.linkGitHub} linkDemo={project.linkDemo} />
+                        <Card key={project.id} project={project} />
                     )
                 })
             }
