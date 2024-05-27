@@ -82,20 +82,18 @@ export default function Homepage() {
                 </div>
                 
                 <Skills />
-                
-                <svg viewBox="0 0 500 200" className="wave__bottom">
-                    <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#50D8D7"></path>
-                    <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#547AA5" opacity="1"></path>
-                </svg>
-                
+                <div className="wave__skills"></div>
+                <div className="wave__skills--outline"></div>
 
             </section>
             
             <section id="contact">
-                <p> Envie d'en savoir plus sur <strong> mon parcours ? </strong>  </p>
+                <div className="wave__bottom"></div>
+                <div className="wave__bottom--outline"></div>
+                <p className="blurb--parcours"> Envie d'en savoir plus sur <strong> mon parcours ? </strong>  </p>
                 <a href="./src/utils/CV.pdf" download="CV"> <Button label="téléchargez mon CV" /> </a>
                 <div className="form__container">
-                    <p> Envie de <strong> collaborer ? </strong>  </p>
+                    <p className="blurb--collaborate"> Envie de <strong> collaborer ? </strong>  </p>
                     <Form />
                 </div>
 
@@ -104,3 +102,11 @@ export default function Homepage() {
         </main>
     )
 }
+
+
+/* SVG styling for wave__bottom
+                <svg viewBox="0 0 500 200" className="wave__bottom">
+                    <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#50D8D7"></path>
+                    <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#547AA5" opacity="1"></path>
+                </svg>
+*/
