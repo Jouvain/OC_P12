@@ -5,15 +5,18 @@ import Navbar from "../Navbar/Navbar"
 import github from "../../assets/github.svg"
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 import "./Card.css"
 
 export default function Card({project}) {
+    const {t} = useTranslation()
     const [modal, setModal] = useState(false)
     let demo;
     let git;
+    let labelDemo = t("labelDemo")
 
-    if (project.linkDemo == "#") {demo= <Link to="/*" target="_blank"> <Button label="démo" /> </Link> }
-    else {demo = <a href={project.linkDemo} target="_blank"> <Button label="démo" /> </a> }
+    if (project.linkDemo == "#") {demo= <Link to="/*" target="_blank"> <Button label={labelDemo} /> </Link> }
+    else {demo = <a href={project.linkDemo} target="_blank"> <Button label={labelDemo} /> </a> }
     if (project.linkGitHub == "#") {git= <Link to="/*" target="_blank"> <img src={github} alt="github logo" className="card__icon"/> </Link>}
     else {git= <a href={project.linkGitHub} target="_blank"> <img src={github} alt="github logo" className="card__icon"/> </a>   }
     

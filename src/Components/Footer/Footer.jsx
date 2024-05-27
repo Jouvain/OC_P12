@@ -8,7 +8,7 @@ export default function Footer() {
     return(
         <footer className="footer">
             <div className="bubble backTop">
-                <a href="#top"> <img src={arrow} /> </a>
+                <a href="#topAnchor"> <img src={arrow} /> </a>
             </div>
             <div>
                 <a href="https://www.linkedin.com/in/cyril-ferrer/" target="blank" ><img src={linkedIn}  alt="the linkedIn logo" className="footer__icon"/></a> 

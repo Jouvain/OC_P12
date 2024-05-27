@@ -23,7 +23,16 @@ i18n.use(initReactI18next).init({
                 bubbleA: "Needs analysis & synthesis",
                 bubbleB: "restitution & presentation",
                 bubbleC: "Design & development",
-                bubbleD: "Project management"
+                bubbleD: "Project management",
+                placeholderName: "Your name",
+                placeholderMail: "How to reach you (phone, mail...)",
+                placeholderText: "Your message",
+                labelDemo: "demo",
+                home: "Home",
+                about: "About",
+                projectsLink: "Projects",
+                skillsLink: "Skills",
+                contactLink: "Contact me"
             }
         },
         fr: {
@@ -41,7 +50,16 @@ i18n.use(initReactI18next).init({
                 bubbleA: "Analyse & synthèse des besoins",
                 bubbleB: "Restitution & présentation",
                 bubbleC: "Conception & développement",
-                bubbleD: "Gestion de projet"
+                bubbleD: "Gestion de projet",
+                placeholderName: "Votre nom complet",
+                placeholderMail: "Comment vous contacter (tél, mail...)",
+                placeholderText: "Votre message",
+                labelDemo: "démo",
+                home: "Accueil",
+                about: "À propos",
+                projectsLink: "Projets",
+                skillsLink: "Savoir-faire",
+                contactLink: "Me contacter"
             }
         }
     }

@@ -16,7 +16,7 @@ export default function Header() {
     return(
         <header className="header">
 
-        <img src={menu} alt="trois barres horizontales" onClick={revealing} className="menu"/>
+        <img id="topAnchor" src={menu} alt="trois barres horizontales" onClick={revealing} className="menu"/>
         <Navbar reveal={nav} closing={()=> setNav(false)}/>
         </header>
     )
