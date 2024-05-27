@@ -143,9 +143,10 @@
     position: relative;
     background-color: white;
     border-radius: 21% 100% 0% 0% / 0% 44% 41% 10% ;
-    .blurb--parcours {
-        margin-top: 0;
-    }
+
+}
+.blurb--parcours {
+    margin-top: 0;
 }
 .form__container {
     margin-top: 4rem;

@@ -11,6 +11,8 @@ import cv from "../utils/CV.pdf"
 import { setTheme } from "../utils/theme"
 import { keepTheme } from "../utils/theme"
 import { useEffect } from "react"
+import { Trans, useTranslation } from "react-i18next"
+import { useState } from "react"
 
 
 /** import assets **/ 
@@ -19,15 +21,27 @@ import splash from "../assets/straitSplash.svg"
 
 /* import styles */
 import "./Homepage.css"
+import i18n from "../i18"
 
 
 
 export default function Homepage() {
-
+    const {i18n, t} = useTranslation()
+    const [translation, setTranslation] = useState(true)
+    
+    let codeLang 
+    
+    
     useEffect(() => {
         keepTheme()
     }),[]
 
+    function switchTranslation () {
+        translation ? setTranslation(false) : setTranslation(true)
+        translation ? codeLang = "en" : codeLang = "fr"
+        i18n.changeLanguage(codeLang)
+    }
+    
     return(
         <main>
             <section className="rows landing">
@@ -36,20 +50,21 @@ export default function Homepage() {
                 <div className=" hero">
                     <div className="hero__titles">
                         <h1 className="headline" id="top"> Cyril F.Ferrer </h1>
-                        <h2 className="subtitle"> Développeur Front-End </h2>
+                        <h2 className="subtitle">
+                            <Trans  components={{strong: <strong/>}} > {t("subheadline")} </Trans>
+                        </h2>
                     </div>
                 
                     <div className="hero__content">
                         <div className="widgets">
-                            <Switcher label="Langue : "/>
+                            <Switcher label="Langue : " handleClick={()=>switchTranslation()}/>
                             <Toggle />
                         </div>
                         <p>
-                            (re)Converti à la création web et aux enjeux du numérique. <br/>
-                            Le beau code est une passion, le digital, une solution ! 
+                            <Trans i18nKey="catchphrase" />
                         </p>
                         <div className="hero__button">
-                            <a href="#contact" ><Button  label="contactez-moi !" /></a>
+                            <a href="#contact" ><Button  label={t("labelContact")} /></a>
                         </div>
                     </div>
 
@@ -67,7 +82,7 @@ export default function Homepage() {
             <section id="projects">
                 
                 <div className="titleSplash" >
-                    <h2 > Projets </h2>
+                    <h2 > {t("titleProjects")} </h2>
                 </div>
                 <div className="homepage__gallery">
                     <Gallery />
@@ -78,10 +93,10 @@ export default function Homepage() {
 
             <section id="skills">
                 <div className="titleSplash">
-                    <h2> Savoir-faire </h2>
+                    <h2> {t("titleSkills")} </h2>
                 </div>
                 
-                <Skills />
+                <Skills translation={translation} />
                 <div className="wave__skills"></div>
                 <div className="wave__skills--outline"></div>
 
@@ -90,10 +105,14 @@ export default function Homepage() {
             <section id="contact">
                 <div className="wave__bottom"></div>
                 <div className="wave__bottom--outline"></div>
-                <p className="blurb--parcours"> Envie d'en savoir plus sur <strong> mon parcours ? </strong>  </p>
-                <a href="./src/utils/CV.pdf" download="CV"> <Button label="téléchargez mon CV" /> </a>
+                <p className="blurb--parcours">
+                <Trans i18nKey="pCourse" className="blurb--parcours" components={{strong: <strong />}} />
+                </p>
+                <a href="./src/utils/CV.pdf" download="CV"> <Button label={t("labelCV")} /> </a>
                 <div className="form__container">
-                    <p className="blurb--collaborate"> Envie de <strong> collaborer ? </strong>  </p>
+                    <p className="blurb--collaborate">
+                        <Trans i18nKey="pCollaborate" components={{strong: <strong/>}}  />
+                    </p>
                     <Form />
                 </div>
 

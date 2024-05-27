@@ -1,32 +1,68 @@
 /* imports */
 import { useState } from "react"
+import { Trans, useTranslation } from "react-i18next"
+import { useEffect } from "react"
 import analyse from "../../assets/magnifying-glass-chart-solid.svg"
 import restitution from "../../assets/person-chalkboard-solid.svg"
 import dev from "../../assets/file-code-solid.svg"
 import project from "../../assets/diagram-project-solid.svg"
 import "./Skills.css"
 
-export default function Skills() {
-    const [text, setText] = useState("Cliquez sur une bulle !")
+export default function Skills({translation}) {
+    let lang = translation
+    const [text, setText] = useState("initial")
+    
+    const {t} = useTranslation()
+    let initialText = t("clickBubble")
+    let bubbleA = t("bubbleA")
+    let bubbleB = t("bubbleB")
+    let bubbleC = t("bubbleC")
+    let bubbleD = t("bubbleD")
 
+    
+    
+    
+    
+    let content 
+    console.log(translation)
+
+    switch(text) {
+        case "initial" :
+            content = initialText
+            break
+        case "A" :
+            content = bubbleA
+            break
+        case "B" :
+            content = bubbleB
+            break
+        case "C" :
+            content = bubbleC
+            break
+        case "D" : 
+            content = bubbleD
+            break
+    }
+
+    
     function clickA(){
-        setText("Analyse & synthèse des besoins")
+        setText("A")
     }
     function clickB(){
-        setText("Restitution & présentation")
+        setText("B")
     }
     function clickC(){
-        setText("Conception & développement")
+        setText("C")
     }
     function clickD(){
-        setText("Gestion de projet")
+        setText("D")
     }
 
     return(
         <div className="container">
             <div className="outline">
                 <div className="mainBubble">
-                    <p> {text} </p>
+                    <p> {content} </p>
                 </div>
             </div>
             <div className="round A">

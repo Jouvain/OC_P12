@@ -8,7 +8,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { useEffect } from 'react'
 import Header from './Components/Header/Header.jsx'
 import Footer from './Components/Footer/Footer.jsx'
-
+import "./i18.js"
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
