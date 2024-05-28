@@ -1,0 +1,48 @@
+.error__background {
+    position: relative;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -2;
+
+}
+.error__wave {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    width: 50vw;
+    height: 50%;
+    border-radius: 63% 37% 19% 81% / 50% 43% 57% 50% ;
+    padding: 5rem;
+    position: relative;
+    
+}
+
+.error__outline {
+    position: absolute;
+    top: -5%;
+    left: -3%;
+    width: 110%;
+    height: 114%;
+    background-color: var(--light-color);
+    border-radius: 63% 37% 19% 81% / 50% 43% 57% 50%  ;
+    z-index: -1;
+}
+
+.error__title {
+    color: var(--contrast);
+    font-size: 2;
+    padding: 5rem;
+    background-color: white;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+.error__blurb {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

@@ -78,12 +78,60 @@
     }
 .portrait__picture {
     border-radius: 68% 32% 30% 70% / 64% 53% 47% 36% ;
-    background-color: white;
-    padding: 3rem;
+    height: 100%;
     margin: auto;
-    width: 40%;
-    margin-left: 2rem;
-
+    width: 100%;
+    
+    z-index: 2;
+    position: relative;
+}
+.portrait__underPicture {
+    
+    width: 50%;
+    
+    border-radius: 68% 32% 30% 70% / 64% 53% 47% 36% ;
+    padding: 3rem;
+    position: relative;
+}
+.portrait__underPicture::before {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 68% 32% 30% 70% / 64% 53% 47% 36% ;
+    z-index: 0;
+    animation: rotation 30s linear infinite;
+}
+.portrait__underPicture::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 68% 32% 30% 70% / 64% 53% 47% 36% ;
+    border: solid 5px var(--dark-color);
+    z-index: 0;
+    animation: rotation 40s linear infinite;
+}
+@keyframes rotation {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+@keyframes counter_rotation {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: -360deg;
+    }
 }
 .portrait__outline {
     background-color: var(--main-color);

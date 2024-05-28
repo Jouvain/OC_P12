@@ -72,7 +72,10 @@ export default function Homepage() {
                 <div className="portraitContainer">
                     <div className="portrait">
                         <div className="portrait__outline">
-                            <img className="portrait__picture" src={portrait}/> 
+                            <div className="portrait__underPicture">
+                                <img className="portrait__picture" src={portrait}/> 
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -85,7 +88,7 @@ export default function Homepage() {
                     <h2 > {t("titleProjects")} </h2>
                 </div>
                 <div className="homepage__gallery">
-                    <Gallery />
+                    <Gallery translation={translation } />
                 </div>
                
                 <Carrousel />

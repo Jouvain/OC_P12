@@ -38,6 +38,7 @@
     width: 100px;
     margin: 1rem auto 2rem auto;
     cursor: pointer;
+    transition: all 0.5s;
 }
 .form__popup {
     display: flex;
@@ -46,4 +47,8 @@
     align-items: center;
     width: 30vw;
     padding: 1rem;
+}
+.form__button:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px var(--main-color);
 }

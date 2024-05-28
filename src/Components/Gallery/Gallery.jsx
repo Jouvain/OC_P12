@@ -4,7 +4,7 @@ import Card from "../Card/Card"
 import projects from "../../utils/projects.json"
 import "./Gallery.css"
 
-export default function Gallery() {
+export default function Gallery({translation}) {
     const [currentPage, setCurrentPage] = useState(1)
     const PER_PAGE = 4
     const filteredProjects = (
@@ -21,11 +21,11 @@ export default function Gallery() {
 
     return(
         <>
-        <div className="gallery">
+        <div key="gallery" className="gallery">
             {
                 filteredProjects.map((project)=> {
                     return(
-                        <Card key={project.id} project={project} />
+                        <Card key={project.id} project={project} translation={translation}/>
                     )
                 })
             }

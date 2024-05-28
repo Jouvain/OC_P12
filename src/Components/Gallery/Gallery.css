@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
-    justify-items:stretch
+    justify-items:stretch;
 }
 .pagination button {
     background-color: white;

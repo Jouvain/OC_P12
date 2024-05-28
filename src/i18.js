@@ -17,8 +17,10 @@ i18n.use(initReactI18next).init({
                 titleSkills: "Skills",
                 pCourse: "Want to know more <strong>about me</strong> ?",
                 pCollaborate: "Want to work <strong>together</strong> ?",
+                pProjects: "Want to see <strong>what i do</strong> ?",
                 labelCV: "download my resume",
                 labelSend: "send",
+                labelProjects: "my projects",
                 clickBubble: "Click a bubble !",
                 bubbleA: "Needs analysis & synthesis",
                 bubbleB: "restitution & presentation",
@@ -32,7 +34,9 @@ i18n.use(initReactI18next).init({
                 about: "About",
                 projectsLink: "Projects",
                 skillsLink: "Skills",
-                contactLink: "Contact me"
+                contactLink: "Contact me",
+                errorTitle: "OH NO !",
+                errorBlurb: "Nothing's here, it's a work in progress !"
             }
         },
         fr: {
@@ -44,8 +48,10 @@ i18n.use(initReactI18next).init({
                 titleSkills: "Savoir-faire",
                 pCourse: "Envie d'en savoir plus sur <strong>mon parcours</strong> ?",
                 pCollaborate: "Envie de <strong>collaborer</strong> ?",
+                pProjects: "Envie de voir <strong>ce que je fais</strong> ?",
                 labelCV: "téléchargez mon CV",
                 labelSend: "envoyer",
+                labelProjects: "mes projets",
                 clickBubble: "Cliquez sur une bulle !",
                 bubbleA: "Analyse & synthèse des besoins",
                 bubbleB: "Restitution & présentation",
@@ -59,7 +65,9 @@ i18n.use(initReactI18next).init({
                 about: "À propos",
                 projectsLink: "Projets",
                 skillsLink: "Savoir-faire",
-                contactLink: "Me contacter"
+                contactLink: "Me contacter",
+                errorTitle: "OUPS !",
+                errorBlurb: "Rien ici, c'est en chantier !"
             }
         }
     }

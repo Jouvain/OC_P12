@@ -1,0 +1,42 @@
+[
+    {
+        "id":"html",
+        "logo": "http://localhost:5173/src/assets/html.svg",
+        "desc": "HTML5 logo"
+    },
+    {
+        "id":"css",
+        "logo": "http://localhost:5173/src/assets/css.svg",
+        "desc": "CSS3 logo"
+    },
+    {
+        "id":"js",
+        "logo": "http://localhost:5173/src/assets/js.svg",
+        "desc": "JavaScript logo"
+    },
+    {
+        "id":"sass",
+        "logo": "http://localhost:5173/src/assets/sass.svg",
+        "desc": "Sass logo"
+    },
+    {
+        "id":"react",
+        "logo": "http://localhost:5173/src/assets/react.svg",
+        "desc": "React logo"
+    },
+    {
+        "id":"redux",
+        "logo": "http://localhost:5173/src/assets/redux.svg",
+        "desc": "Redux logo"
+    },
+    {
+        "id":"vite",
+        "logo": "http://localhost:5173/src/assets/vite.svg",
+        "desc": "Vite logo"
+    },
+    {
+        "id":"node",
+        "logo": "http://localhost:5173/src/assets/node.svg",
+        "desc": "Node.js logo"
+    }
+]

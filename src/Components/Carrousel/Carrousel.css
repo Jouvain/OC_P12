@@ -1,13 +1,36 @@
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
 .carrousel {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 1rem 0;
-    margin: 2rem;
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    justify-content: space-around;
+    margin: 2rem;
+    padding: 1rem 0;
+    height: 100px;
 }
 .carrousel__icon {
     height: 64px;
     width: 64px;
+}
+.carrousel__autoplay {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 1rem 0;
+    width: 200%;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: slide 60s linear infinite;
 }

@@ -24,7 +24,7 @@ export default function Skills({translation}) {
     
     
     let content 
-    console.log(translation)
+    
 
     switch(text) {
         case "initial" :
