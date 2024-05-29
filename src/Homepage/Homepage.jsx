@@ -23,6 +23,19 @@ import splash from "../assets/straitSplash.svg"
 import "./Homepage.css"
 import i18n from "../i18"
 
+let testIO = {
+    root: null,
+    rootMargin: "0px",
+    treshold: 1.0
+}
+let observer = new IntersectionObserver(testing, testIO)
+
+
+
+
+function testing () {
+    console.log("IO déclenché !")
+}
 
 
 export default function Homepage() {
@@ -30,8 +43,9 @@ export default function Homepage() {
     const [translation, setTranslation] = useState(true)
     
     let codeLang 
-    
-    
+    let target = document.getElementById("skills")
+    console.log(target)
+    //observer.observe(target)
     useEffect(() => {
         keepTheme()
     }),[]
@@ -44,12 +58,12 @@ export default function Homepage() {
     
     return(
         <main>
-            <section className="rows landing">
+            <section className="rows landing" id="top">
                 <div className="wave__top--outline"></div>
                 <div className="wave__top"></div>
                 <div className=" hero">
                     <div className="hero__titles">
-                        <h1 className="headline" id="top"> Cyril F.Ferrer </h1>
+                        <h1 className="headline" > Cyril F.Ferrer </h1>
                         <h2 className="subtitle">
                             <Trans  components={{strong: <strong/>}} > {t("subheadline")} </Trans>
                         </h2>

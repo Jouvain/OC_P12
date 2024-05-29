@@ -1,6 +1,7 @@
 /* imports */
-import { Link, NavLink } from "react-router-dom"
-import { HashLink } from "react-router-hash-link/dist/react-router-hash-link.cjs.production"
+import { NavLink } from "react-router-dom"
+//import { HashLink, NavHashLink } from "react-router-hash-link/dist/react-router-hash-link.cjs.production"
+import {Link, Button, Element, Events, animateScroll as scroll, scrollSpy} from "react-scroll"
 import { useTranslation } from "react-i18next"
 import cross from "../../assets/xmark-solid.svg"
 import "./Navbar.css"
@@ -20,13 +21,16 @@ export default function ({reveal, closing, translation}) {
         <nav className={styling}>
             <div className="navbar__button" onClick={closing}> <img className="navbar__icon" src={cross} alt="a black X" /> </div>
             <ul className="navbar__list">
-                <li> <HashLink className="navbar__link" to="/#topAnchor" > {home} </HashLink> </li>
-                <li><NavLink className="navbar__link" to="/about" state={{code:lang}} > {about} </NavLink></li>
-                <li> <HashLink className="navbar__link" to="/#projects" > {projectsLink} </HashLink> </li>
-                <li> <HashLink className="navbar__link" to="/#skills" > {skillsLink} </HashLink> </li>
-                <li> <HashLink className="navbar__link" to="/#contact" > {contactLink} </HashLink> </li>
+                <li> <Link activeClass="active" spy={true} smooth={true} className="navbar__link" to="top" > {home} </Link> </li>
+                <li> <Link activeClass="active" spy={true} smooth={true} className="navbar__link" to="projects" > {projectsLink} </Link> </li>
+                <li> <Link activeClass="active" spy={true} smooth={true} className="navbar__link" to="skills" > {skillsLink} </Link> </li>
+                <li> <Link activeClass="active" spy={true} smooth={true} className="navbar__link" to="contact" > {contactLink} </Link> </li>
             </ul>
         </nav>
         
     )
 }
+
+/*
+<li><NavLink className="navbar__link" to="/about" state={{code:lang}} > {about} </NavLink></li>
+*/

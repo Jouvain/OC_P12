@@ -7,7 +7,7 @@
     top: 0;
     margin: 0;
     background-color: white;
-    box-shadow: 0 5px 5px var(--light-color);
+    box-shadow: 0 5px 10px var(--contrast);
     z-index: 10;
     transform: translateX(0);
     transition: all 0.5s;
@@ -31,6 +31,7 @@
     height: 48px;
     cursor: pointer;
     margin: 1rem;
+    
 }
 .navbar__icon {
     width: 40px;
@@ -45,10 +46,28 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    li {
+        width: 100%;
+        text-align: center;
+        
+    }
+    .active {
+        
+        color: white;
+        background-color: var(--contrast);
+        padding: 1rem 0;
+    }
+    
 }
 .navbar__link {
+    display: inline-block;
     text-decoration: none;
     color: var(--contrast);
     font-size: 1.2rem;
     font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem 0;
 }
+
+

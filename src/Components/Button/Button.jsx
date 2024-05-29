@@ -8,9 +8,3 @@ export default function Button ({label}) {
     )
 }
 
-Button.propTypes = {
-    label: PropTypes.string
-}
-Button.defaultProps = {
-    label: "bouton"
-}

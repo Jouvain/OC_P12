@@ -17,7 +17,8 @@
     "react-i18next": "^14.1.2",
     "react-router": "^6.23.1",
     "react-router-dom": "^6.23.1",
-    "react-router-hash-link": "^2.4.3"
+    "react-router-hash-link": "^2.4.3",
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
