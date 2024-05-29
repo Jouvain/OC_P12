@@ -2,7 +2,7 @@
     {
         "id":1,
         "name": "Ohmyfood",
-        "picture": "http://localhost:5173/src/assets/screenshot.png",
+        "picture": "/src/assets/screenshot.png",
         "linkGitHub":"https://github.com/Jouvain/OC_P4",
         "linkDemo":"#",
         "description":"Un mockup de site de réservation de restaurant",
@@ -12,7 +12,7 @@
     {
         "id":2,
         "name": "Bookie",
-        "picture": "http://localhost:5173/src/assets/screen_bookie.png",
+        "picture": "/src/assets/screen_bookie.png",
         "linkGitHub":"#",
         "linkDemo":"#",
         "description":"Un mockup de site de réservation de solution d'hébergement",
@@ -22,7 +22,7 @@
     {
         "id":3,
         "name": "724Event",
-        "picture": "http://localhost:5173/src/assets/screen_724.png",
+        "picture": "/src/assets/screen_724.png",
         "linkGitHub":"https://github.com/Jouvain/Learning-debugging",
         "linkDemo":"#",
         "description":"Vitrine d'une entreprise fictive dans l'évènementiel",
@@ -32,7 +32,7 @@
     {
         "id":4,
         "name": "Kasa",
-        "picture": "http://localhost:5173/src/assets/screen_kasa.png",
+        "picture": "/src/assets/screen_kasa.png",
         "linkGitHub":"#",
         "linkDemo":"#",
         "description":"Un mockup de site de réservation de solution d'hébergement",
@@ -42,7 +42,7 @@
     {
         "id":5,
         "name": "Nina Carducci",
-        "picture": "http://localhost:5173/src/assets/screen_nina.png",
+        "picture": "/src/assets/screen_nina.png",
         "linkGitHub":"https://github.com/Jouvain/ninacarducci_optimisation",
         "linkDemo":"#",
         "description":"Portefolio d'une photographe indépendante en freelance - fictive !",
@@ -52,7 +52,7 @@
     {
         "id":6,
         "name": "ArgentBank",
-        "picture": "http://localhost:5173/src/assets/screen_argentBank.png",
+        "picture": "/src/assets/screen_argentBank.png",
         "linkGitHub":"https://github.com/Jouvain/ArgentBank-website",
         "linkDemo":"#",
         "description":"Tableau de bord bancaire pour particuliers",
@@ -62,7 +62,7 @@
     {
         "id":7,
         "name": "Sophie Buel",
-        "picture": "http://localhost:5173/src/assets/screen_bluel.png",
+        "picture": "/src/assets/screen_bluel.png",
         "linkGitHub":"https://github.com/Jouvain/OC_P6",
         "linkDemo":"#",
         "description":"Site vitrine d'une architecte d'intérieur",
