@@ -13,6 +13,8 @@ import { keepTheme } from "../utils/theme"
 import { useEffect } from "react"
 import { Trans, useTranslation } from "react-i18next"
 import { useState } from "react"
+import Header from "../Components/Header/Header"
+import Footer from "../Components/Footer/Footer"
 
 
 /** import assets **/ 
@@ -57,6 +59,8 @@ export default function Homepage() {
     }
     
     return(
+        <>
+        <Header />
         <main>
             <section className="rows landing" id="top">
                 <div className="wave__top--outline"></div>
@@ -136,6 +140,8 @@ export default function Homepage() {
 
             </section>
         </main>
+        <Footer />
+        </>
     )
 }
 

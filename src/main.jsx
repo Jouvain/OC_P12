@@ -16,13 +16,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     
   <React.StrictMode>
     <Router>
-        <Header />
+        
         <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<Aboutpage />} />
             <Route path="*" element={<Errorpage />} />
         </Routes>
-        <Footer />
+        
     </Router>
   </React.StrictMode>,
 )

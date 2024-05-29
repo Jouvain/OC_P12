@@ -1,14 +1,17 @@
 /* imports */
+import { Link } from "react-scroll"
 import linkedIn from "../../assets/linkedin-in.svg"
 import gitHub from "../../assets/github.svg"
 import arrow from "../../assets/orb-direction.svg"
 import "./Footer.css"
 
+
 export default function Footer() {
     return(
         <footer className="footer">
             <div className="bubble backTop">
-                <a href="#topAnchor"> <img src={arrow} /> </a>
+                <Link to="top" smooth={true} > <img src={arrow} />  </Link>
+                
             </div>
             <div>
                 <a href="https://www.linkedin.com/in/cyril-ferrer/" target="blank" ><img src={linkedIn}  alt="the linkedIn logo" className="footer__icon"/></a> 
