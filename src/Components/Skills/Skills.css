@@ -7,7 +7,7 @@
     position: relative;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: var(--background);
     border-radius: 53% 47% 28% 72% / 37% 61% 39% 63% ;
     width: 300px;
     height: 180px;
@@ -23,7 +23,7 @@
     border-radius: 57% 43% 33% 67% / 52% 30% 70% 48%  ;
 }
 .round {
-    background-color: white;
+    background-color: var(--background);
     border-radius: 50%;
     padding: 10px;
     object-fit: cover;
@@ -87,4 +87,23 @@
     top: 0%;
     left: -45%;
     animation: dangling 3s ease-in-out infinite;
+}
+
+@media (max-width: 767px) {
+    .A {
+        top: -30%;
+        left: 80%;
+    }
+    .B {
+        top: 60%;
+        left: -5%;
+    }
+    .C {
+        top: 60%;
+        left: 85%;
+    }
+    .D {
+        top: -25%;
+        left: 0;
+    }
 }

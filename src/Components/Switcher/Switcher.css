@@ -19,7 +19,7 @@
     }
     .inner:before {
     line-height: 36px;
-    color: #fff;
+    color: var(--background);
     content: "";
     padding-left: 10px;
     }
@@ -29,7 +29,7 @@
     width: 24px;
     height: 24px;
     margin: 6px;
-    background: #fff;
+    background: var(--background);
     position: absolute;
     top: 0;
     bottom: 0;

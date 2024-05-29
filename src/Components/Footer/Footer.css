@@ -17,7 +17,7 @@
     height: 48px;
     width: 48px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--background);
     background: linear-gradient(to left, var(--main-color),  var(--light-color));
     box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
     transition: all 0.5s;

@@ -2,7 +2,8 @@
     padding: 1rem 0 0 1rem ;
     position: fixed;
     z-index: 10;
-    background-color: white;
+    top:1rem;
+    background-color: var(--background);
     border-radius: 50%;
     padding: 1rem;
     margin: 1rem;
@@ -14,4 +15,17 @@
     height: 48px;
     width: 48px;
     cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        left: -1rem;
+        top: -0.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        left: 35vw;
+    }
 }

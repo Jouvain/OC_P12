@@ -2,12 +2,9 @@
     /* DESIGN SYSTEM */
     font-family: Jost, Arial, Helvetica, sans-serif;
     --tag-font: Monofett;
-    --main-color: #547AA5;
-    --light-color: #50D8D7;
-    --dark-color: #4F5165;
-    --contrast: #474044;
-
     --main-font: "Jost", sans-serif;
+
+
 }
 
 .theme--light {
@@ -15,12 +12,14 @@
     --light-color: #50D8D7;
     --dark-color: #4F5165;
     --contrast: #474044;  
+    --background: #ffffff;
 }
 .theme--dark {
     --main-color: #606C38;
     --light-color: #FEFAE0;
     --dark-color: #283618;
     --contrast: #DDA15E;
+    --background: #ffffff;
 }
 
  body {

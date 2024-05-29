@@ -1,6 +1,6 @@
 .error__background {
     position: relative;
-    background-color: white;
+    background-color: var(--background);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -38,11 +38,11 @@
     color: var(--contrast);
     font-size: 2;
     padding: 5rem;
-    background-color: white;
+    background-color: var(--background);
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 .error__blurb {
-    color: white;
+    color: var(--background);
     font-size: 1.2rem;
     font-weight: bold;
 }
