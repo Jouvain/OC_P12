@@ -15,6 +15,7 @@ export default function Card({project, translation}) {
     let git;
     let labelDemo = t("labelDemo")
     
+    
     if (project.linkDemo == "#") {demo= <Link to="/*" target="_blank" state={{translation}} > <Button label={labelDemo} /> </Link> }
     else {demo = <a href={project.linkDemo} target="_blank"> <Button label={labelDemo} /> </a> }
     if (project.linkGitHub == "#") {git= <Link to="/*" target="_blank"> <img src={github} alt="github logo" className="card__icon"/> </Link>}
@@ -26,7 +27,12 @@ export default function Card({project, translation}) {
 
     return(
         <article className="card">
-            <img src={project.picture} className="card__picture" />
+            <img 
+            loading="lazy"
+            srcSet={project.pictureSrcSet}
+            
+            className="card__picture"
+            src={project.picture} alt={project.pictureAlt} />
             <Modal openModal={modal} closeModal={()=> setModal(false)}>
                 <div className="focus">
                     <h3 className="focus__title"> {project.name} </h3>
@@ -41,7 +47,12 @@ export default function Card({project, translation}) {
                     <div className="focus__colorBand"></div>
                     <div className="focus__wrapper">
                        
-                        <img className="focus__picture" src={project.picture} />
+                        <img
+                        loading="lazy"
+                        srcSet={project.pictureSrcSet}
+                        sizes={project.pictureSizes}
+                        className="focus__picture" 
+                        src={project.picture} alt={project.pictureAlt} />
                     </div>
                     
                     <p className="focus__abstract"> {project.abstract} </p>
