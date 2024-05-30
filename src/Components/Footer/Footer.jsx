@@ -10,7 +10,7 @@ export default function Footer() {
     return(
         <footer className="footer">
             <div className="bubble backTop">
-                <Link to="top" smooth={true} > <img src={arrow} />  </Link>
+                <Link to="top" smooth={true} > <img src={arrow} alt="a bubble with a stylized anchor" />  </Link>
                 
             </div>
             <div>

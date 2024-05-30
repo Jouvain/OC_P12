@@ -66,16 +66,16 @@ export default function Skills({translation}) {
                 </div>
             </div>
             <div className="round A">
-                <img src={analyse} onClick={clickA}/>
+                <img src={analyse} onClick={clickA} alt="a magnyfying glass" />
             </div>
             <div className="round B">
-                <img src={restitution} onClick={clickB}/>
+                <img src={restitution} onClick={clickB} alt="a person and a chalkboard" />
             </div>
             <div className="round C">
-                <img src={dev} onClick={clickC}/>
+                <img src={dev} onClick={clickC} alt="symbol of a code ditor" />
             </div>
             <div className="round D">
-                <img src={project} onClick={clickD}/>
+                <img src={project} onClick={clickD} alt="a symbolized flowchart" />
             </div>
 
             

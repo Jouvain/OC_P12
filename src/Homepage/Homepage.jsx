@@ -84,7 +84,7 @@ export default function Homepage() {
                     <div className="portrait">
                         <div className="portrait__outline">
                             <div className="portrait__underPicture">
-                                <img className="portrait__picture" src={portrait}/> 
+                                <img className="portrait__picture" src={portrait} alt="face of a man in pixel art" /> 
                             </div>
                             
                         </div>

@@ -19,7 +19,7 @@ export default function Modal({openModal, closeModal, children}) {
     return(
         <dialog ref={ref} onCancel={closeModal}>
             {children}
-            <button onClick={closeModal} className="modal__button"> <img src={cross} /> </button>
+            <div onClick={closeModal} className="modal__button"> <img src={cross} alt="a  black cross" /> </div>
         </dialog>
     )
 }

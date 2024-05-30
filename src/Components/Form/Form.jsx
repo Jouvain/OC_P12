@@ -41,9 +41,9 @@ export default function Form() {
 
     return(
         <form ref={form} onSubmit={handleSubmit} className="form">
-            <input name="from_name" className="form__name" id="from_name" type="text" value={name} onChange={(event)=> setName(event.target.value)} required placeholder={placeholderName}/>
-            <input name="from_mail" className="form__mail" id="from_mail" type="mail" value={mail} onChange={(event)=> setMail(event.target.value)} required placeholder={placeholderMail} />
-            <textarea className="form__text" name="message" rows={6} cols={80} placeholder={placeholderText} value={text} onChange={(event)=> setText(event.target.value)}/>
+            <input aria-label="Enter your name" name="from_name" className="form__name" id="from_name" type="text" value={name} onChange={(event)=> setName(event.target.value)} required placeholder={placeholderName}/>
+            <input aria-label="Enter your mail" name="from_mail" className="form__mail" id="from_mail" type="mail" value={mail} onChange={(event)=> setMail(event.target.value)} required placeholder={placeholderMail} />
+            <textarea aria-label="Enter your message" className="form__text" name="message" rows={6} cols={80} placeholder={placeholderText} value={text} onChange={(event)=> setText(event.target.value)}/>
             <div>
                 <button className="form__button" type="submit" disabled={sending}> {sending ? "En cours" : "Envoyer"} </button>
             </div>

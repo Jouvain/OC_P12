@@ -31,6 +31,3 @@ export default function ({reveal, closing, translation}) {
     )
 }
 
-/*
-<li><NavLink className="navbar__link" to="/about" state={{code:lang}} > {about} </NavLink></li>
-*/

@@ -28,7 +28,6 @@ export default function Card({project, translation}) {
     return(
         <article className="card">
             <img 
-            loading="lazy"
             srcSet={project.pictureSrcSet}
             
             className="card__picture"
@@ -36,7 +35,7 @@ export default function Card({project, translation}) {
             <Modal openModal={modal} closeModal={()=> setModal(false)}>
                 <div className="focus">
                     <h3 className="focus__title"> {project.name} </h3>
-                    <p className="focus__desc"> {project.description} </p>
+                    <h4 className="focus__desc"> {project.description} </h4>
                     <div className="focus__tagsContainer">
                         {
                             project.tags.map((tag, index)=> {
@@ -48,7 +47,6 @@ export default function Card({project, translation}) {
                     <div className="focus__wrapper">
                        
                         <img
-                        loading="lazy"
                         srcSet={project.pictureSrcSet}
                         sizes={project.pictureSizes}
                         className="focus__picture" 

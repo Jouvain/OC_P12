@@ -21,13 +21,3 @@ export default function Header() {
     )
 }
 
-/* VERSION AVEC MODALE
-    const [modal, setModal] = useState(false)
-
-    function opening() {
-        setModal(true)
-    }rev
-        <Modal openModal={modal} closeModal={()=>setModal(false)} >
-            <Navbar />
-        </Modal>
-*/
