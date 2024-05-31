@@ -1,42 +1,42 @@
 [
     {
         "id":"html",
-        "logo": "/src/assets/html.svg",
+        "logo": "/assets/html.svg",
         "desc": "HTML5 logo"
     },
     {
         "id":"css",
-        "logo": "/src/assets/css.svg",
+        "logo": "/assets/css.svg",
         "desc": "CSS3 logo"
     },
     {
         "id":"js",
-        "logo": "/src/assets/js.svg",
+        "logo": "/assets/js.svg",
         "desc": "JavaScript logo"
     },
     {
         "id":"sass",
-        "logo": "/src/assets/sass.svg",
+        "logo": "/assets/sass.svg",
         "desc": "Sass logo"
     },
     {
         "id":"react",
-        "logo": "/src/assets/react.svg",
+        "logo": "/assets/react.svg",
         "desc": "React logo"
     },
     {
         "id":"redux",
-        "logo": "/src/assets/redux.svg",
+        "logo": "/assets/redux.svg",
         "desc": "Redux logo"
     },
     {
         "id":"vite",
-        "logo": "/src/assets/vite.svg",
+        "logo": "/assets/vite.svg",
         "desc": "Vite logo"
     },
     {
         "id":"node",
-        "logo": "/src/assets/node.svg",
+        "logo": "/assets/node.svg",
         "desc": "Node.js logo"
     }
 ]
