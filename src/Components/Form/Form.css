@@ -52,6 +52,9 @@
     transform: scale(1.1);
     box-shadow: 2px 2px 2px var(--main-color);
 }
+.form__name::placeholder, .form__mail::placeholder, .form__text::placeholder {
+    font-family: Jost, Arial, Helvetica, sans-serif;
+}
 
 @media(max-width: 767px) {
     .form {

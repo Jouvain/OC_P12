@@ -10,9 +10,9 @@
         "pictureSmall": "/assets/screenshot_small.webp",
         "linkGitHub":"https://github.com/Jouvain/OC_P4",
         "linkDemo":"#",
-        "description":"Un mockup de site de réservation de restaurant",
+        "description":"Mockup de site de réservation de restaurant",
         "tags":["UI/UX", "HTML/CSS/JS"],
-        "abstract":"Un projet scolaire qui mettait l'accent sur les animations."
+        "abstract":"Une interface simple : une liste de restaurants sous forme de vignettes, chacune d'entre elles aiguillant sur une page dédiée à la carte du restaurant. De là, l'utilisateur peut théoriquement sélectionner ses plats pour les commander avant d'atteindre le restaurant. Ce fut ma première utilisation des animations et transitions, pour dynamiser et fluidifier la navigation... sans surcharger le navigateur lors du rendu. Chaque animation est pensée pour ne pas un impact minimal. Ce qui signifie par exemple que les effets jouant sur l'échelle sont des trompe-l'oeil (c'est l'opacité d'un élement vis-à vis d'un sub-élément de taille différente qui joue en réalité)."
     },
     {
         "id":2,
