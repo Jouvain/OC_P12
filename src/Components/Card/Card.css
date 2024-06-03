@@ -120,5 +120,12 @@
 @media(max-width:767px) {
     .focus {
         width: unset;
+        padding-top: 4rem;
+    }
+    .focus__title {
+        font-size: 2rem;
+    }
+    .focus__desc {
+        font-size: 1rem;
     }
 }
