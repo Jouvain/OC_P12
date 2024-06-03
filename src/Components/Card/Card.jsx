@@ -43,9 +43,9 @@ export default function Card({project, translation}) {
                             })
                         }
                     </div>
-                    <div className="focus__colorBand"></div>
+                    
                     <div className="focus__wrapper">
-                       
+                        <div className="focus__colorBand"></div>
                         <img
                         srcSet={project.pictureSrcSet}
                         sizes={project.pictureSizes}
