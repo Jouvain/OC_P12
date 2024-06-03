@@ -9,10 +9,10 @@
         "pictureLarge": "/assets/screenshot.webp",
         "pictureSmall": "/assets/screenshot_small.webp",
         "linkGitHub":"https://github.com/Jouvain/OC_P4",
-        "linkDemo":"#",
+        "linkDemo":"https://jouvain.github.io/OC_P4/",
         "description":"Mockup de site de réservation de restaurant",
         "tags":["UI/UX", "HTML/CSS/JS"],
-        "abstract":"Une interface simple : une liste de restaurants sous forme de vignettes, chacune d'entre elles aiguillant sur une page dédiée à la carte du restaurant. De là, l'utilisateur peut théoriquement sélectionner ses plats pour les commander avant d'atteindre le restaurant. Ce fut ma première utilisation des animations et transitions, pour dynamiser et fluidifier la navigation... sans surcharger le navigateur lors du rendu. Chaque animation est pensée pour ne pas un impact minimal. Ce qui signifie par exemple que les effets jouant sur l'échelle sont des trompe-l'oeil (c'est l'opacité d'un élement vis-à vis d'un sub-élément de taille différente qui joue en réalité)."
+        "abstract":"Une interface simple : une liste de restaurants sous forme de vignettes, chacune d'entre elles aiguillant sur une page dédiée à la carte du restaurant. De là, l'utilisateur peut théoriquement sélectionner ses plats pour les commander avant d'atteindre le restaurant. Ce fut ma première utilisation des animations et transitions, pour dynamiser et fluidifier la navigation... sans surcharger le navigateur lors du rendu. Chaque animation est pensée pour avoir un impact minimal. Ce qui signifie par exemple que les effets jouant sur l'échelle sont des trompe-l'oeil (c'est l'opacité d'un élement vis-à vis d'un sub-élément de taille différente qui joue en réalité)."
     },
     {
         "id":2,
@@ -25,9 +25,9 @@
         "pictureSmall": "/assets/screenshot_small.webp",
         "linkGitHub":"#",
         "linkDemo":"#",
-        "description":"Un mockup de site de réservation de solution d'hébergement",
+        "description":"Mockup de site de réservation de solution d'hébergement",
         "tags":["UI/UX", "HTML/CSS/JS"],
-        "abstract":"Un projet scolaire forçant à implémenter une maquette complexe en responsive - et mobile-first en l'occurence."
+        "abstract":"Toute première interface intégrée en responsive lors de mes études. Seule la page d'accueil est fonctionnelle - pas les vignettes ni les filtres. L'idée était de contraindre l'étudiant que j'étais à manipuler les modèles de boîte et affichages conditionnels (le contenu des boutons varie selon le type de viewport) en CSS pur. Ni Javascript, ni recours à un bootstrap."
     },
     {
         "id":3,
@@ -40,9 +40,9 @@
         "pictureSmall": "/assets/screenshot_small.webp",
         "linkGitHub":"https://github.com/Jouvain/Learning-debugging",
         "linkDemo":"#",
-        "description":"Vitrine d'une entreprise fictive dans l'évènementiel",
+        "description":"Site-vitrine d'une entreprise en évènementiel",
         "tags":["Debugging", "React"],
-        "abstract":"Imaginez qu'un développeur fou choisisse d'utiliser des structures de données hors de proportion, des variables découpées et inutilement éparpillées dans divers composants et fasse des erreurs de typo et de logique au milieu. Voilà ce qu'il fallait débugger."
+        "abstract":"Imaginez qu'un développeur choisisse d'utiliser des structures de données hors de proportion, des variables découpées et inutilement éparpillées dans divers composants et fasse des erreurs de frappe et de logique au milieu. Voilà ce qu'il fallait débugger pour obtenir un carrousel, des filtres, une pagination, des affichages conditionnels et un formulaire fonctionnels."
     },
     {
         "id":4,
@@ -54,10 +54,10 @@
         "pictureLarge": "/assets/screenshot.webp",
         "pictureSmall": "/assets/screenshot_small.webp",
         "linkGitHub":"#",
-        "linkDemo":"#",
-        "description":"Un mockup de site de réservation de solution d'hébergement",
+        "linkDemo":"https://kasabyjouvain.netlify.app/",
+        "description":"Mockup site de réservation de solution d'hébergement",
         "tags":["UI/UX", "HTML/CSS/JS", "React"],
-        "abstract":"Implémentation d'une maquette avec quelques animations et interactions avec un routage contraint en React."
+        "abstract":"Implémentation d'une maquette avec quelques animations et interactions, avec un routage contraint en React. L'intégration d'un routeur-react permet de naviguer entre les diverses pages de l'application (accueil, règles générales et focus dédié à chaque logement). Le recours au hook UseLocation en lieu et place de navlinks plus 'standards' m'a permis d'éviter un niveau de transmission des props, d'interdire un biais de navigation forcée et de ne procéder qu'à un unique appel API au lancement de l'application."
     },
     {
         "id":5,
@@ -69,10 +69,10 @@
         "pictureLarge": "/assets/screenshot.webp",
         "pictureSmall": "/assets/screenshot_small.webp",
         "linkGitHub":"https://github.com/Jouvain/ninacarducci_optimisation",
-        "linkDemo":"#",
+        "linkDemo":"https://jouvain.github.io/ninacarducci_optimisation/",
         "description":"Portefolio d'une photographe indépendante en freelance - fictive !",
         "tags":["UI/UX", "HTML/CSS/JS", "Optimisation"],
-        "abstract":"Une mission d'optimisation technique (et de mise en place du référencement) pour un site initialement dans le rouge. Ressources trop lourdes, code non optimisé, balisage non sémantique, accessibilité en berne étaient autant de points à rectifier."
+        "abstract":"Une mission d'optimisation technique (et de mise en place du référencement) pour un site initialement dans le rouge. Ressources trop lourdes, code non optimisé, balisage non sémantique, accessibilité en berne étaient autant de points à rectifier. La partie la plus lourde de l'optimisation fut liée au LCP (Largest Content Paint), puisque les copieuses et nombreuses images devaient attendre le chargement d'un ensemble de scripts JS/CSS pour être rendues. Il a entre autres fallu user d'un lazy loading stratégique et redécouper (puis minifier) les scripts pour en isoler la part cruciale et déferer le reste."
     },
     {
         "id":6,
@@ -87,7 +87,7 @@
         "linkDemo":"#",
         "description":"Tableau de bord bancaire pour particuliers",
         "tags":["React", "Redux"],
-        "abstract":"Implémentation d'une interface sécurisée avec contrainte en React - et en appliquant une logique Redux pour gérer l'état de l'application."
+        "abstract":"Implémentation d'une interface sécurisée avec React - en appliquant une logique Redux pour gérer l'état de l'application. Malgré le peu d'informations manipulées à ce stade du projet (nom, prénom, pseudonyme, mail et MDP), une slice dédiée au profil utilisateur été créée. L'idée est ici de conserver un maximum de modularité, puisque l'étendue finale et les fonctionnalités potentielles du projet n'était pas connues au début de l'exercie. Un gestion des cookies (toujours via le store redux) est aussi implémentée, et des propositions de routes ont été faites pour le back-end via un Swagger."
     },
     {
         "id":7,
@@ -102,6 +102,6 @@
         "linkDemo":"#",
         "description":"Site vitrine d'une architecte d'intérieur",
         "tags":["UI/UX", "HTML/CSS/JS"],
-        "abstract":"Gestion en javascript chimiquement pur d'un site vitrine avec authentification et galerie interactive."
+        "abstract":"Gestion en javascript chimiquement pur d'un site vitrine avec authentification et galerie interactive à injecter au rendu de la page principale. Ce fut mon premier projet comportant des appels API, avec l'idée de manpipuler toutes les opérations CRUD : il fallait auatnt pouvoir récupérer, modifier, ajouter que supprimer des projets et/ou des informations."
     }
 ]

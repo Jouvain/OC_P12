@@ -13,19 +13,22 @@
     --dark-color: #4F5165;
     --contrast: #474044;  
     --background: #ffffff;
+    --font-color: #000000;
 }
 .theme--dark {
-    --main-color: #606C38;
-    --light-color: #FEFAE0;
-    --dark-color: #283618;
-    --contrast: #DDA15E;
-    --background: #ffffff;
+    --main-color: #495357;
+    --light-color: #59646a;
+    --dark-color: #293132;
+    --contrast: #cecccc;
+    --background: #000000;
+    --font-color: #ffffff;
 }
 
  body {
     margin: 0;
     padding: 0;
     font-family: var(--main-font);
+    color: var(--font-color);
 }
 
 strong {
