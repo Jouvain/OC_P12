@@ -122,7 +122,7 @@ export default function Homepage() {
                 <p className="blurb--parcours">
                 <Trans i18nKey="pCourse" className="blurb--parcours" components={{strong: <strong />}} />
                 </p>
-                <a href="./src/utils/CV.pdf" download="CV"> <Button label={t("labelCV")} /> </a>
+                <a href="./CV.pdf" download="CV"> <Button label={t("labelCV")} /> </a>
                 <div className="form__container">
                     <p className="blurb--collaborate">
                         <Trans i18nKey="pCollaborate" components={{strong: <strong/>}}  />
