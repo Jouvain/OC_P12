@@ -1,4 +1,6 @@
-
+h2 {
+    color: black;
+}
 .landing {
     position: relative;
     border-radius: 0% 100% 98% 14% / 100% 0% 36% 0% ;

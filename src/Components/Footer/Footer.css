@@ -5,6 +5,7 @@
     align-items: center;
     align-content: space-between;
     padding: 1rem 2rem;
+    background-color: var(--background);
 }
 .footer__icon {
     width: 36px;

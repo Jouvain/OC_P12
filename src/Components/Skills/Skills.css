@@ -23,7 +23,7 @@
     border-radius: 57% 43% 33% 67% / 52% 30% 70% 48%  ;
 }
 .round {
-    background-color: var(--background);
+    background-color: white;
     border-radius: 50%;
     padding: 10px;
     object-fit: cover;

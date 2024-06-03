@@ -31,7 +31,7 @@
     height: 48px;
     cursor: pointer;
     margin: 1rem;
-    
+    background-color: white;
 }
 .navbar__icon {
     width: 40px;

@@ -47,6 +47,7 @@
     align-items: center;
     width: 30vw;
     padding: 1rem;
+    color: var(--font-color);
 }
 .form__button:hover {
     transform: scale(1.1);
