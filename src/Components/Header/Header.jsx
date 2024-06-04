@@ -5,18 +5,16 @@ import { useState } from "react"
 import menu from "../../assets/bars-solid.svg"
 import "./Header.css"
 
-export default function Header() {
-    const [nav, setNav] = useState(false)
+export default function Header({passedRef, navValue, closingNav, openingNav}) {
+    
     
 
-    function revealing() {
-        setNav(true)
-    }
+   
 
     return(
         <header className="header">
-        <img src={menu} alt="trois barres horizontales" onClick={revealing} className="menu"/>
-        <Navbar reveal={nav} closing={()=> setNav(false)}/>
+        <img ref={passedRef} src={menu} alt="trois barres horizontales" onClick={openingNav} className="menu"/>
+        <Navbar reveal={navValue} closing={closingNav}/>
         </header>
     )
 }

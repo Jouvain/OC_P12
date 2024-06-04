@@ -10,17 +10,16 @@ import Header from './Components/Header/Header.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import "./i18.js"
 
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-    
   <React.StrictMode>
     <Router>
-        
         <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<Aboutpage />} />
             <Route path="*" element={<Errorpage />} />
         </Routes>
-        
     </Router>
   </React.StrictMode>,
 )

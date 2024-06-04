@@ -1,6 +1,4 @@
-h2 {
-    color: black;
-}
+
 .landing {
     position: relative;
     border-radius: 0% 100% 98% 14% / 100% 0% 36% 0% ;
@@ -15,6 +13,9 @@ h2 {
     font-size: 2rem;
     font-weight: 900;
     color: var(--contrast);
+}
+.subtitle {
+    color: var(--font-color);
 }
 
 .wave__top {
@@ -229,6 +230,7 @@ h2 {
     position: relative;
     top: 0;
     left: 0;
+    color: black;
 }
 
 @media (max-width: 767px ) {

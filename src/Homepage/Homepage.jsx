@@ -15,6 +15,7 @@ import { Trans, useTranslation } from "react-i18next"
 import { useState } from "react"
 import Header from "../Components/Header/Header"
 import Footer from "../Components/Footer/Footer"
+import { useRef } from "react"
 
 
 /** import assets **/ 
@@ -28,21 +29,33 @@ import i18n from "../i18"
 
 
 
-
-
-function testing () {
-    console.log("IO déclenché !")
-}
-
-
 export default function Homepage() {
     const {i18n, t} = useTranslation()
     const [translation, setTranslation] = useState(true)
-    
+    const [test, setTest] = useState(true)
+    const [nav, setNav] = useState(false)
+    const navRef = useRef()
     let codeLang 
+    function revealing() {
+        setNav(true)
+    }
+
+    function escapeNav(eventPath) {
+        if(nav){
+            console.log(eventPath)
+        }
+    }
 
     useEffect(() => {
         keepTheme()
+    }),[]
+
+    useEffect(()=> {
+        document.body.addEventListener("click", (event)=> {
+            if (!event.composedPath().includes(navRef.current)) {
+                setNav(false)
+            } 
+        })
     }),[]
 
     function switchTranslation () {
@@ -53,9 +66,9 @@ export default function Homepage() {
     
     return(
         <>
-        <Header />
-        <main>
-            <section className="landing" id="top">
+        <Header passedRef={navRef} navValue={nav} openingNav={revealing} closingNav={()=>{setNav(false)}} />
+        <main  >
+            <section className="landing" id="top" >
                 <div className="wave__top--outline"></div>
                 <div className="wave__top"></div>
                 <div className=" hero">
@@ -96,7 +109,7 @@ export default function Homepage() {
             <section id="projects">
                 
                 <div className="titleSplash" >
-                    <h2 > {t("titleProjects")} </h2>
+                    <h2 className="titleSplash_head" > {t("titleProjects")} </h2>
                 </div>
                 <div className="homepage__gallery">
                     <Gallery translation={translation } />
@@ -107,7 +120,7 @@ export default function Homepage() {
 
             <section id="skills">
                 <div className="titleSplash">
-                    <h2> {t("titleSkills")} </h2>
+                    <h2 className="titleSplash_head"> {t("titleSkills")} </h2>
                 </div>
                 
                 <Skills translation={translation} />
