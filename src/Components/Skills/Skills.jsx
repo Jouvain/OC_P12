@@ -1,31 +1,22 @@
 /* imports */
 import { useState } from "react"
 import { Trans, useTranslation } from "react-i18next"
-import { useEffect } from "react"
 import analyse from "../../assets/magnifying-glass-chart-solid.svg"
 import restitution from "../../assets/person-chalkboard-solid.svg"
 import dev from "../../assets/file-code-solid.svg"
 import project from "../../assets/diagram-project-solid.svg"
 import "./Skills.css"
 
-export default function Skills({translation}) {
-    let lang = translation
+export default function Skills() {
     const [text, setText] = useState("initial")
-    
     const {t} = useTranslation()
     let initialText = t("clickBubble")
     let bubbleA = t("bubbleA")
     let bubbleB = t("bubbleB")
     let bubbleC = t("bubbleC")
     let bubbleD = t("bubbleD")
-
-    
-    
-    
-    
     let content 
     
-
     switch(text) {
         case "initial" :
             content = initialText
@@ -44,7 +35,6 @@ export default function Skills({translation}) {
             break
     }
 
-    
     function clickA(){
         setText("A")
     }
@@ -77,8 +67,6 @@ export default function Skills({translation}) {
             <div className="round D">
                 <img src={project} onClick={clickD} alt="a symbolized flowchart" />
             </div>
-
-            
         </div>
     )
 }

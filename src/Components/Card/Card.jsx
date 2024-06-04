@@ -1,7 +1,6 @@
 /* imports */
 import Modal from "../Modal/Modal"
 import Button from "../Button/Button"
-import Navbar from "../Navbar/Navbar"
 import github from "../../assets/github.svg"
 import { useState } from "react"
 import { Link } from "react-router-dom"

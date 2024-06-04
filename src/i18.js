@@ -11,7 +11,7 @@ i18n.use(initReactI18next).init({
         en: {
             translation : {
                 subheadline: "Front-End Developer",
-                catchphrase: "Converted to web creation. <br/> The beauty of coding is a pleasure, the digital service is an answer !",
+                catchphrase: "Passion, fresh perspectives and project management expertise. <br/> Let's turn our ideas into digital realities !",
                 labelContact: "contact me !",
                 titleProjects: "Projects", 
                 titleSkills: "Skills",
@@ -42,7 +42,7 @@ i18n.use(initReactI18next).init({
         fr: {
             translation: {
                 subheadline: "Développeur Front-End",
-                catchphrase: "(re)Converti à la création web et aux enjeux du numérique. <br/> Le beau code est une passion, le digital, une solution !",
+                catchphrase: "Passion, perspectives atypiques et expertise en gestion de projet. <br/> Transformons nos idées en réalités numériques !",
                 labelContact: "contactez-moi !",
                 titleProjects: "Projets", 
                 titleSkills: "Savoir-faire",

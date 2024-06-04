@@ -1,4 +1,4 @@
-/** import Components **/
+/* imports */
 import Button from "../Components/Button/Button"
 import Switcher from "../Components/Switcher/Switcher"
 import Toggle from "../Components/Toggle/Toggle"
@@ -6,9 +6,6 @@ import Gallery from "../Components/Gallery/Gallery"
 import Carrousel from "../Components/Carrousel/Carrousel"
 import Skills from "../Components/Skills/Skills"
 import Form from "../Components/Form/Form"
-import wave from "../assets/wave.svg"
-import cv from "../utils/CV.pdf"
-import { setTheme } from "../utils/theme"
 import { keepTheme } from "../utils/theme"
 import { useEffect } from "react"
 import { Trans, useTranslation } from "react-i18next"
@@ -16,40 +13,27 @@ import { useState } from "react"
 import Header from "../Components/Header/Header"
 import Footer from "../Components/Footer/Footer"
 import { useRef } from "react"
-
-
-/** import assets **/ 
 import portrait from "../assets/portrait_pixelArtV1.svg"
-import splash from "../assets/straitSplash.svg"
-
-/* import styles */
 import "./Homepage.css"
-import i18n from "../i18"
-
-
 
 
 export default function Homepage() {
+    /* object "i18n" contain translated texts, "t" function access them when called, "Switch" call the global translation with a codelang */
     const {i18n, t} = useTranslation()
     const [translation, setTranslation] = useState(true)
-    const [test, setTest] = useState(true)
+    let codeLang
+    function switchTranslation () {
+        translation ? setTranslation(false) : setTranslation(true)
+        translation ? codeLang = "en" : codeLang = "fr"
+        i18n.changeLanguage(codeLang)
+    }
+
+    /* "nav" = prop for Header >> Navbar for managing the hidden//visible class of the navbar  + "navRef" for escaping navbar via composedPath */
     const [nav, setNav] = useState(false)
     const navRef = useRef()
-    let codeLang 
     function revealing() {
         setNav(true)
     }
-
-    function escapeNav(eventPath) {
-        if(nav){
-            console.log(eventPath)
-        }
-    }
-
-    useEffect(() => {
-        keepTheme()
-    }),[]
-
     useEffect(()=> {
         document.body.addEventListener("click", (event)=> {
             if (!event.composedPath().includes(navRef.current)) {
@@ -58,16 +42,16 @@ export default function Homepage() {
         })
     }),[]
 
-    function switchTranslation () {
-        translation ? setTranslation(false) : setTranslation(true)
-        translation ? codeLang = "en" : codeLang = "fr"
-        i18n.changeLanguage(codeLang)
-    }
-    
+    /* cf "theme.js" -> apply a ".class" to the document at launch */
+    useEffect(() => {
+        keepTheme()
+    }),[]
+
     return(
         <>
         <Header passedRef={navRef} navValue={nav} openingNav={revealing} closingNav={()=>{setNav(false)}} />
         <main  >
+
             <section className="landing" id="top" >
                 <div className="wave__top--outline"></div>
                 <div className="wave__top"></div>
@@ -78,7 +62,6 @@ export default function Homepage() {
                             <Trans  components={{strong: <strong/>}} > {t("subheadline")} </Trans>
                         </h2>
                     </div>
-                
                     <div className="hero__content">
                         <div className="widgets">
                             <Switcher label="Langue : " handleClick={()=>switchTranslation()}/>
@@ -91,7 +74,6 @@ export default function Homepage() {
                             <a href="#contact" ><Button  label={t("labelContact")} /></a>
                         </div>
                     </div>
-
                 </div>
                 <div className="portraitContainer">
                     <div className="portrait">
@@ -103,18 +85,15 @@ export default function Homepage() {
                         </div>
                     </div>
                 </div>
-
             </section>
             
             <section id="projects">
-                
                 <div className="titleSplash" >
                     <h2 className="titleSplash_head" > {t("titleProjects")} </h2>
                 </div>
                 <div className="homepage__gallery">
                     <Gallery translation={translation } />
                 </div>
-               
                 <Carrousel />
             </section>
 
@@ -122,11 +101,9 @@ export default function Homepage() {
                 <div className="titleSplash">
                     <h2 className="titleSplash_head"> {t("titleSkills")} </h2>
                 </div>
-                
-                <Skills translation={translation} />
+                <Skills  />
                 <div className="wave__skills"></div>
                 <div className="wave__skills--outline"></div>
-
             </section>
             
             <section id="contact">
@@ -142,9 +119,8 @@ export default function Homepage() {
                     </p>
                     <Form />
                 </div>
-
-
             </section>
+
         </main>
         <Footer />
         </>
@@ -152,9 +128,3 @@ export default function Homepage() {
 }
 
 
-/* SVG styling for wave__bottom
-                <svg viewBox="0 0 500 200" className="wave__bottom">
-                    <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#50D8D7"></path>
-                    <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#547AA5" opacity="1"></path>
-                </svg>
-*/
